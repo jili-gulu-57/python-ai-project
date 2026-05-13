@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-ai-project-manager"
+version = "0.1.0"
+description = "Utilities for organizing Python AI project code."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Python AI Developer" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+ai = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
